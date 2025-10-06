@@ -1,0 +1,35 @@
+.search-bar form {
+  margin-left: 1rem;
+  display: flex;
+}
+
+.search-bar input {
+  background-color: #FAFAFA;
+  padding-left: .5rem;
+  width: 20rem;
+  height: 1.2rem;
+  font-family: 'Lexend Deca', sans-serif;
+  font-size: .7rem;
+  font-weight: 300;
+  border: .1rem solid #102E4A55;
+  border-top-left-radius: .7rem;
+  border-bottom-left-radius: .7rem;
+}
+
+.search-bar input:focus {
+  outline: none;
+}
+
+.search-bar button {
+  all: unset;
+  background-color: #102E4A;
+  color: #FAFAFA;
+  font-size: .7rem;
+  width: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top-right-radius: .7rem;
+  border-bottom-right-radius: .7rem;
+  cursor: pointer;
+}

@@ -1,0 +1,21 @@
+.header {
+  background-color: #F7F7F7;
+  width: 100%;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: .1rem .1rem 1rem rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+  color: #102E4A;
+  margin-left: 1.5rem;
+  font-weight: 800;
+  font-size: 1.5vw;
+}
+
+.header a {
+  width: 9rem;
+  margin-right: 1.5rem;
+}

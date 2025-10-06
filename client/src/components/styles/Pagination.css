@@ -1,0 +1,60 @@
+.pagination {
+  width: 100%;
+  margin: 1rem;
+  display: flex;
+  justify-content: center;
+}
+
+.change-page {
+  all: unset;
+  background-color: #102E4A;
+  color: #FAFAFA;
+  font-size: .7rem;
+  text-align: center;
+  width: 1.5rem;
+  height: 1.5rem;
+  border: .1rem solid #102E4A;
+  border-radius: .3rem;
+  margin: 0 .5rem;
+  cursor: pointer;
+}
+
+.disabled {
+  all: unset;
+  background-color: #D3D3D3;
+  color: #A9A9A9;
+  font-size: .7rem;
+  text-align: center;
+  width: 1.5rem;
+  height: 1.5rem;
+  border: .1rem solid #D3D3D3;
+  border-radius: .3rem;
+  margin: 0 .5rem;
+}
+
+.number-page {
+  all: unset;
+  background-color: #F7F7F7;
+  color: #102E4A;
+  font-size: .7rem;
+  text-align: center;
+  width: 1.5rem;
+  height: 1.5rem;
+  border: .1rem solid #102E4A;
+  border-radius: .5rem;
+  margin: 0 .1rem 0 .1rem;
+  cursor: pointer;
+}
+
+.selected {
+  all: unset;
+  background-color: #102E4A;
+  color: #FAFAFA;
+  font-size: .7rem;
+  text-align: center;
+  width: 1.5rem;
+  height: 1.5rem;
+  border: .1rem solid #102E4A;
+  border-radius: .5rem;
+  margin: 0 .1rem 0 .1rem;
+}

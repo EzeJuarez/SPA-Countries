@@ -1,0 +1,26 @@
+.filters-container {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.filters-container select {
+  background-color: #FAFAFA;
+  width: 18vw;
+  font-family: 'Lexend Deca', sans-serif;
+  font-size: .6rem;
+  font-weight: 300;
+}
+
+.filters-container option {
+  background-color: #FAFAFA;
+}
+
+.container-filter {
+  margin: .5rem 0 .5rem 0;
+}
+
+.text-filter {
+  font-size: .8rem;
+  font-weight: 300;
+}
