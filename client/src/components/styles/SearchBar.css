@@ -6,7 +6,7 @@
 .search-bar input {
   background-color: #FAFAFA;
   padding-left: .5rem;
-  width: 20rem;
+  width: clamp(15rem, calc(22vw + 1rem), 25rem);
   height: 1.2rem;
   font-family: 'Lexend Deca', sans-serif;
   font-size: .7rem;

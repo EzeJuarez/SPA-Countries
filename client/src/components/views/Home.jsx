@@ -72,18 +72,20 @@ const Home = () => {
                       setIsOpen={setIsOpen}
                       selectRef={{ alphabeticalRef, continentRef, populationRef, activityRef }}
                     />
-                    { listCountries !== data && <button onClick={handleReload}>Reload all countries</button> }
                   </div>
                   <Pagination
                     allCountries={listCountries}
                     currentPage={currentPage}
                     setCurrentPage={setCurrentPage}
                     error={error}
-                  />
+                    />
                   {
                     listCountries?.length && (
-                      <div className='card-container'>
-                        { getCardsPaginated().map(country => <Card key={country.id} country={country} />) }
+                      <div className='view-card'>
+                        { listCountries !== data && <button onClick={handleReload}>Reload all countries</button> }
+                        <div className='card-container'>
+                          { getCardsPaginated().map(country => <Card key={country.id} country={country} />) }
+                        </div>
                       </div>
                     )
                   }

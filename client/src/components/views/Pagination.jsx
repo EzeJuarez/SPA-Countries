@@ -24,16 +24,18 @@ const Pagination = ({ currentPage, setCurrentPage, allCountries }) => {
             onClick={() => setCurrentPage(currentPage - 1)}
           > <i className="ti ti-arrow-badge-left-filled"></i> </button>
 
-          {
-            pages().map(page =>
-              <button
-                disabled={currentPage === page}
-                key={page}
-                className={currentPage === page ? 'selected' : 'number-page'}
-                onClick={() => setCurrentPage(page)}
-              > {page} </button>
-            )
-          }
+          <div className='pages-container'>
+            {
+              pages().map(page =>
+                <button
+                  disabled={currentPage === page}
+                  key={page}
+                  className={currentPage === page ? 'selected' : 'number-page'}
+                  onClick={() => setCurrentPage(page)}
+                > {page} </button>
+              )
+            }
+          </div>
 
           <button
             disabled={currentPage === numberOfPages}
