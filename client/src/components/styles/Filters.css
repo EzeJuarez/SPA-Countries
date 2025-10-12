@@ -5,7 +5,7 @@
 }
 
 .filters-container select {
-  background-color: #FAFAFA;
+  background-color: var(--white);
   width: 18vw;
   font-family: 'Lexend Deca', sans-serif;
   font-size: .6rem;
@@ -13,7 +13,7 @@
 }
 
 .filters-container option {
-  background-color: #FAFAFA;
+  background-color: var(--white);
 }
 
 .container-filter {

@@ -1,5 +1,5 @@
 .card a {
-  background-color: #FAFAFA;
+  background-color: var(--white);
   width: clamp(11rem, calc(13vw + 1rem), 15rem);
   height: 10rem;
   padding: 1rem;
@@ -10,7 +10,7 @@
   align-items: center;
   justify-content: space-around;
   border-radius: 1rem;
-  box-shadow: .4rem .4rem 1rem #102E4A55;
+  box-shadow: .4rem .4rem 1rem #00000055;
 }
 
 .card .flag {

@@ -4,7 +4,7 @@
 }
 
 .search-bar input {
-  background-color: #FAFAFA;
+  background-color: var(--white);
   padding-left: .5rem;
   width: clamp(15rem, calc(22vw + 1rem), 25rem);
   height: 1.2rem;
@@ -22,8 +22,8 @@
 
 .search-bar button {
   all: unset;
-  background-color: #102E4A;
-  color: #FAFAFA;
+  background-color: var(--blue);
+  color: var(--white);
   font-size: .7rem;
   width: 2rem;
   display: flex;

@@ -11,7 +11,7 @@
 }
 
 .filters {
-  background-color: #FAFAFA;
+  background-color: var(--white);
   padding: 1rem;
   width: 20%;
   border: 0.1rem solid #00000011;

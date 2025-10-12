@@ -27,8 +27,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100;300;400;500;600;700;900&display=swap');
 
 :root {
+  --gray: #F7F7F7;
+  --white: #FAFAFA;
+  --blue: #102E4A;
+
   font-family: 'Lexend Deca', sans-serif;
-  background-color: #F7F7F7;
+  background-color: var(--gray);
 
   height: 100dvh;
 
@@ -52,15 +56,15 @@ a {
 
 button {
   all: unset;
-  background-color: #102E4A;
+  background-color: var(--blue);
   height: 2rem;
   width: 9rem;
-  color: #FAFAFA;
+  color: var(--white);
   font-size: .7rem;
   display: flex;
   align-items: center;
   justify-content: center;
   border-radius: .5rem;
-  border: .1rem solid #FAFAFA;
+  border: .1rem solid var(--white);
   cursor: pointer;
 }

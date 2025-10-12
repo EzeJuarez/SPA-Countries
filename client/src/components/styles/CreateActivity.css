@@ -1,5 +1,5 @@
 .create-content {
-  background-color: #FAFAFA;
+  background-color: var(--white);
   height: 100%;
   padding: 0;
   margin: 0;
@@ -23,7 +23,7 @@
 }
 
 .form-create form {
-  background-color: #F7F7F7;
+  background-color: var(--gray);
   color: #000000;
   padding: 2rem;
   width: 25rem;
@@ -59,7 +59,7 @@
 }
 
 .input-text {
-  background-color: #FAFAFA;
+  background-color: var(--white);
   font-family: 'Lexend Deca', sans-serif;
   font-weight: 300;
   width: 21rem;
@@ -72,7 +72,7 @@
 }
 
 .input-number {
-  background-color: #FAFAFA;
+  background-color: var(--white);
   font-family: 'Lexend Deca', sans-serif;
   font-weight: 300;
   width: 4rem;
@@ -87,7 +87,7 @@
 }
 
 .select {
-  background-color: #FAFAFA;
+  background-color: var(--white);
 }
 
 .radio {
@@ -134,7 +134,7 @@
   padding: .3rem;
   margin-top: .4rem;
   font-size: .7rem;
-  border: .1rem solid #102E4A;
+  border: .1rem solid var(--blue);
   border-radius: .5rem;
 }
 
@@ -159,7 +159,7 @@
 }
 
 .content-modal {
-  background-color: #FAFAFA;
+  background-color: var(--white);
   height: 10rem;
   width: 30rem;
   font-size: 1.5rem;
@@ -172,7 +172,7 @@
 
 .countries-modal {
   padding: 1rem;
-  background-color: #FAFAFA;
+  background-color: var(--white);
   max-height: 30rem;
   width: 25rem;
   display: flex;
@@ -213,7 +213,7 @@
 }
 
 .delete-countries{
-  background-color: #FAFAFA;
-  border: .1rem solid #102E4A;
-  color: #102E4A;
+  background-color: var(--white);
+  border: .1rem solid var(--blue);
+  color: var(--blue);
 }

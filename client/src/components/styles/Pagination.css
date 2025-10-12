@@ -6,13 +6,13 @@
 
 .change-page {
   all: unset;
-  background-color: #102E4A;
-  color: #FAFAFA;
+  background-color: var(--blue);
+  color: var(--white);
   font-size: .7rem;
   text-align: center;
   width: 1.5rem;
   height: 1.5rem;
-  border: .1rem solid #102E4A;
+  border: .1rem solid var(--blue);
   border-radius: .3rem;
   margin: 0 .5rem;
   cursor: pointer;
@@ -40,13 +40,13 @@
 
 .number-page {
   all: unset;
-  background-color: #F7F7F7;
-  color: #102E4A;
+  background-color: var(--gray);
+  color: var(--blue);
   font-size: .7rem;
   text-align: center;
   width: 1.5rem;
   height: 1.5rem;
-  border: .1rem solid #102E4A;
+  border: .1rem solid var(--blue);
   border-radius: .5rem;
   margin: .1rem;
   cursor: pointer;
@@ -54,13 +54,13 @@
 
 .selected {
   all: unset;
-  background-color: #102E4A;
-  color: #FAFAFA;
+  background-color: var(--blue);
+  color: var(--white);
   font-size: .7rem;
   text-align: center;
   width: 1.5rem;
   height: 1.5rem;
-  border: .1rem solid #102E4A;
+  border: .1rem solid var(--blue);
   border-radius: .5rem;
   margin: 0 .1rem 0 .1rem;
 }

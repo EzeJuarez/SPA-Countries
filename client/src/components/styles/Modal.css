@@ -9,7 +9,7 @@
 
 .modal {
   padding: 1rem;
-  background-color: #FAFAFA;
+  background-color: var(--white);
   max-height: 32rem;
   width: 30rem;
   display: flex;
