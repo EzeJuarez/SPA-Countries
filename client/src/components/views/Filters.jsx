@@ -1,7 +1,7 @@
 import { useFetch } from '../../hooks/useFetch';
 import '../styles/Filters.css';
 
-const Filters = ({ allCountries, listCountries, setListCountries, selectRef }) => {
+const Filters = ({ allCountries, listCountries, setListCountries, selectRef, setShow }) => {
   const { data, loading, error } = useFetch("activities");
 
   const handleFilterByAlphabetical = e => {
@@ -94,6 +94,8 @@ const Filters = ({ allCountries, listCountries, setListCountries, selectRef }) =
           }
         </select>
       </div>
+
+      <button className='on-close' onClick={() => setShow(false)}>Close filters</button>
 
     </div>
   );

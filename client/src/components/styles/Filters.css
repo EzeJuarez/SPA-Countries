@@ -6,7 +6,7 @@
 
 .filters-container select {
   background-color: var(--white);
-  width: 18vw;
+  width: clamp(10rem, calc(14vw + 1rem) , 15rem);
   font-family: 'Lexend Deca', sans-serif;
   font-size: .6rem;
   font-weight: 300;
@@ -18,9 +18,39 @@
 
 .container-filter {
   margin: .5rem 0 .5rem 0;
+  display: flex;
+  flex-direction: column;
 }
 
 .text-filter {
   font-size: .8rem;
   font-weight: 300;
+  margin: .5rem 0;
+}
+
+.on-close {
+  display: none;
+}
+
+@media screen and (max-width: 800px) {
+  .container-filter {
+    display: flex;
+    flex-direction: column;
+    width: 15rem;
+  }
+  .container-filter {
+    margin: .5rem 0 .5rem 0;
+  }
+  .filters-container select {
+    width: 12rem;
+  }
+  .text-filter {
+    font-size: .8rem;
+    font-weight: 300;
+  }
+  .on-close {
+    display: block;
+    margin-top: 2rem;
+    text-align: center;
+  }
 }

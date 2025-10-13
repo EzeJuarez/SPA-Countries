@@ -6,8 +6,8 @@ const Card = ({ country }) => {
     <div className='card'>
       <Link to={`/detail/${country.id}`}>
         <img src={country.flag} alt={country.name} className='flag' />
-        <span className='main'>{country.name}</span>
-        <span className='text'>
+        <span className='main-card'>{country.name}</span>
+        <span className='text-card'>
           {
             country?.continents.length === 1 ? (
               country?.continents[0]

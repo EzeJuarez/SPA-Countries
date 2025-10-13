@@ -12,7 +12,7 @@
   color: var(--blue);
   margin-left: 1.5rem;
   font-weight: 800;
-  font-size: 1.5vw;
+  font-size: clamp(.8rem, calc(.6vw + .2rem), 1rem);
 }
 
 .header a {

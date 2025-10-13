@@ -33,3 +33,9 @@
   border-bottom-right-radius: .7rem;
   cursor: pointer;
 }
+
+@media screen and (max-width: 800px) {
+  .search-bar form {
+    margin: 0;
+  }
+}

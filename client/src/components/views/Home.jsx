@@ -13,6 +13,7 @@ const Home = () => {
   const [ listCountries, setListCountries] = useState([]);
   const [ currentPage, setCurrentPage ] = useState(1);
   const [ isOpen, setIsOpen ] = useState(false);
+  const [ show, setShow ] = useState(false);
   const alphabeticalRef = useRef(null);
   const continentRef = useRef(null);
   const populationRef = useRef(null);
@@ -55,12 +56,13 @@ const Home = () => {
               </div>
 
               <div className='content'>
-                <div className='filters'>
+                <div className={show ? 'filters show' : 'filters'}>
                   <Filters
                     allCountries={data}
                     listCountries={listCountries}
                     setListCountries={setListCountries}
                     selectRef={{ alphabeticalRef, continentRef, populationRef, activityRef }}
+                    setShow={setShow}
                   />
                 </div>
 
@@ -82,7 +84,10 @@ const Home = () => {
                   {
                     listCountries?.length && (
                       <div className='view-card'>
-                        { listCountries !== data && <button onClick={handleReload}>Reload all countries</button> }
+                        <div className='view-buttons'>
+                          <button className='menu' onClick={() => setShow(true)}><i class="ti ti-menu-2"></i>Filters</button>
+                          { listCountries !== data && <button onClick={handleReload}>Reload all countries</button> }
+                        </div>
                         <div className='card-container'>
                           { getCardsPaginated().map(country => <Card key={country.id} country={country} />) }
                         </div>
