@@ -17,7 +17,7 @@ const Detail = () => {
           ) : (
             <>
               <div className='go-to-home'>
-                <Link to='/home'><button>Go to Home</button></Link>
+                <Link to='/'><button>Go to Home</button></Link>
               </div>
               <div className='detail'>
                 <div className='flag-container'>
@@ -87,7 +87,7 @@ const Detail = () => {
                               <th className='activity'>{activity.name}</th>
                               <th className='difficulty'>{activity.difficulty}</th>
                               <th className='duration'>{`${activity.duration} minutes`}</th>
-                              <th className='season'>{activity.season.map(season => <span>{`${season}`}</span>)}</th>
+                              <th className='season'>{activity.season.map(season => <span key={season}>{`${season}`}</span>)}</th>
                             </tr>
                           ))
                         }

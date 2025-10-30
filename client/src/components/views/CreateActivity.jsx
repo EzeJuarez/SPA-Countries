@@ -99,7 +99,7 @@ const CreateActivity = () => {
     <>
       <div className='create-content'>
         <div className='go-to-home'>
-          <Link to='/home'><button>Go to Home</button></Link>
+          <Link to='/'><button>Go to Home</button></Link>
         </div>
         <div className='form-create'>
           <form onSubmit={e => handleCreate(e, inputs)}>

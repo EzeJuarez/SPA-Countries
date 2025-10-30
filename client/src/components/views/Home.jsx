@@ -85,7 +85,7 @@ const Home = () => {
                     listCountries?.length && (
                       <div className='view-card'>
                         <div className='view-buttons'>
-                          <button className='menu' onClick={() => setShow(true)}><i class="ti ti-menu-2"></i>Filters</button>
+                          <button className='menu' onClick={() => setShow(true)}><i className="ti ti-menu-2"></i>Filters</button>
                           { listCountries !== data && <button onClick={handleReload}>Reload all countries</button> }
                         </div>
                         <div className='card-container'>

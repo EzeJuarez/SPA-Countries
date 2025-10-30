@@ -1,4 +1,4 @@
-const nameRegExp = /^(?!\s*$)[a-zA-Z\s]+$/;
+const nameRegExp = /^(?!\s*$)[\p{L}\s]+$/u;
 const difficultyRegExp = /^[1-5]$/;
 const durationRegExp = /^[1-9][0-9]{0,3}$/;
 
