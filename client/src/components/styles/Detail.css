@@ -2,6 +2,7 @@
 
 .go-to-home {
   padding: 1rem;
+  width: 6rem;
 }
 
 /* detail */
@@ -22,7 +23,7 @@
 
 .flag-container {
   position: relative;
-  width: 30%;
+  width: 50%;
   height: 100%;
   display: flex;
   align-items: center;
@@ -30,10 +31,7 @@
 }
 
 .flag-container .flag {
-  max-height: 15rem;
-  max-width: 25rem;
-  min-height: 5rem;
-  min-width: 10rem;
+  width: clamp(15rem, calc(30vw + 5rem), 25rem);
 }
 
 .info-container {
@@ -172,4 +170,19 @@ table thead {
   align-items: center;
   justify-content: space-evenly;
   border-bottom: .1rem solid #00000033;
+}
+
+@media screen and (max-width: 600px) {
+  .detail {
+    flex-direction: column;
+  }
+  .flag-container {
+    width: 100%;
+  }
+  .info-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
 }

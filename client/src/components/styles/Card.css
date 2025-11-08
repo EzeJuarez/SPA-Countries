@@ -1,6 +1,6 @@
 .card a {
   background-color: var(--white);
-  width: clamp(10rem, calc(13vw + 1rem), 15rem);
+  width: clamp(10rem, calc(14vw + 1rem), 15rem);
   height: 10rem;
   padding: 1rem;
   margin: 1rem;
@@ -31,4 +31,10 @@
 .text-card {
   font-size: .6rem;
   font-weight: 400;
+}
+
+@media screen and (max-width: 550px) {
+  .card a {
+    width: 13rem;
+  }
 }

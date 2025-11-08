@@ -34,6 +34,7 @@
   font-family: 'Lexend Deca', sans-serif;
   background-color: var(--gray);
 
+  height: 100vh;
   height: 100dvh;
 
   font-synthesis: none;
@@ -43,6 +44,7 @@
 }
 
 body {
+  height: 100vh;
   height: 100dvh;
   margin: 0;
   padding: 0;
@@ -58,9 +60,10 @@ button {
   all: unset;
   background-color: var(--blue);
   height: 2rem;
-  width: 9rem;
+  width: 6rem;
+  width: clamp(6rem, calc(10vw + 1rem), 9rem);
   color: var(--white);
-  font-size: .7rem;
+  font-size: .6rem;
   display: flex;
   align-items: center;
   justify-content: center;

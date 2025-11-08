@@ -6,17 +6,15 @@
 }
 
 .go-to-home {
-  height: 10%;
+  height: 10vh;
+  height: 10dvh;
   display: flex;
   align-items: center;
 }
 
-.go-to-home a {
-  width: 9rem;
-}
-
 .form-create {
-  height: 80%;
+  height: 80vh;
+  height: 80dvh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -26,8 +24,8 @@
   background-color: var(--gray);
   color: #000000;
   padding: 2rem;
-  width: 25rem;
-  height: 28rem;
+  width: clamp(17rem, calc(50vw + 5rem), 25rem);
+  height: 30rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -37,8 +35,8 @@
 }
 
 .content-input {
-  height: 8rem;
-  width: 22rem;
+  height: 12rem;
+  width: clamp(15rem, calc(50vw + 5rem), 22rem);
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -47,14 +45,14 @@
 }
 
 .double {
-  width: 21rem;
+  width: clamp(15rem, calc(50vw + 5rem), 22rem);
   display: flex;
   justify-content: space-between;
 }
 
 .label {
   margin: 0 .3rem 0 .3rem;
-  font-size: .8rem;
+  font-size: clamp(.6rem, calc(.5vw + .5rem), .8rem);
   font-weight: 300;
 }
 
@@ -62,7 +60,7 @@
   background-color: var(--white);
   font-family: 'Lexend Deca', sans-serif;
   font-weight: 300;
-  width: 21rem;
+  width: clamp(15rem, calc(50vw + 5rem), 22rem);
   border: .1rem solid #00000022;
   outline: none;
 }
@@ -91,19 +89,19 @@
 }
 
 .radio {
-  width: 12rem;
+  width: clamp(2rem, calc(10vw + 5rem), 12rem);
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
 
-.radio section {
+section {
   display: flex;
   align-items: center;
 }
 
 .select-season {
-  width: 21.5rem;
+  width: clamp(15rem, calc(50vw + 5rem), 22rem);
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -116,7 +114,7 @@
 }
 
 .form-create select {
-  width: 21.5rem;
+  width: clamp(15rem, calc(50vw + 5rem), 22rem);
   font-family: 'Lexend Deca', sans-serif;
   font-size: .7rem;
   font-weight: 300;
@@ -216,4 +214,36 @@
   background-color: var(--white);
   border: .1rem solid var(--blue);
   color: var(--blue);
+}
+
+@media screen and (max-width: 430px) {
+  .go-to-home {
+    height: 5vh;
+    height: 5dvh;
+  }
+  .form-create form {
+    padding: 1rem;
+    height: 34rem;
+  }
+  .double {
+    flex-direction: column;
+  }
+  .radio {
+    width: 15rem;
+  }
+  .duration-content {
+    margin-top: 1rem;
+  }
+  .button-container {
+    padding-top: 1rem;
+  }
+}
+
+@media screen and (max-height: 700px) {
+  .go-to-home {
+    height: 2rem;
+  }
+  .form-create {
+    height: 35rem;
+  }
 }

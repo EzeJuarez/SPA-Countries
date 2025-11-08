@@ -45,6 +45,7 @@
   width: 95%;
   max-width: 1280px;
   height: 100vh;
+  height: 100dvh;
   margin: 0;
   padding: 0;
   display: flex;
