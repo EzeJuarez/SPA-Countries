@@ -5,5 +5,8 @@ const router = Router();
 
 router.use("/countries", countryRouter);
 router.use("/activity", activityRouter);
+router.use("/", (req, res) => {
+  res.status(200).json("Ok");
+});
 
 module.exports = router;
