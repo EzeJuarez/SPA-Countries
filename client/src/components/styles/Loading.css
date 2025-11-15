@@ -14,3 +14,12 @@
 .loading {
   font-size: 2rem;
 }
+
+@media screen and (max-width: 600px) {
+  .gif {
+    width: 10rem;
+  }
+  .loading {
+    font-size: 1rem;
+  }
+}
