@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState } from 'react';
+import Loading from './Loading';
 import Header from './Header';
 import SearchBar from './SearchBar';
 import Filters from './Filters';
@@ -44,7 +45,7 @@ const Home = () => {
     <>
       {
         loading ? (
-          <p>LOADING</p>
+          <Loading />
         ) : (
           error ? (
             <p>{error}</p>

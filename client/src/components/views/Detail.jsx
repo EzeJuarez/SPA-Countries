@@ -1,5 +1,6 @@
 import { Link, useParams } from 'react-router-dom';
 import { useFetch } from '../../hooks/useFetch';
+import Loading from './Loading';
 import '../styles/Detail.css';
 
 const Detail = () => {
@@ -10,7 +11,7 @@ const Detail = () => {
     <>
       {
         loading ? (
-          <span>Loading...</span>
+          <Loading />
         ) : (
           error ? (
             <span>{error}</span>
