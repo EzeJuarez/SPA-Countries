@@ -1,5 +1,5 @@
 import gif from '../../assets/loading.gif';
-import '../styles/loading.css';
+import '../styles/Loading.css';
 
 const Loading = () => {
   return (
